@@ -1,0 +1,19 @@
+{
+  "name": "HCMS",
+  "version": "1.9.1",
+  "description": "Hostel Complaint Management solution",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zuhail",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4",
+    "mysql":"*"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

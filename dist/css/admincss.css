@@ -1,0 +1,26 @@
+.fontAudiowide{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fontSpecialElite{
+    font-family: 'Audiowide', cursive;
+}
+.fontSourceSansPro{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:grey;
+}
+a[name='dashBoardButtons']:hover{
+    background-color: red;
+}
+
+[name=historyComplaintInfo] .fa {
+    color: #003366;
+}
+[name=historyStudentInfo] .fa {
+    color: #307be1;
+}
+[name=historyHandymanInfo] .fa {
+    color: #003366;
+}
+::placeholder{
+    color: white;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hostel Complaint Management System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/indexcss.css">
+</head>
+<header class="hedr">
+	<div class="row">
+		<h1 class="hdd">HOSTEL COMPLAINT MANAGEMENT SYSTEM</h1>
+	</div>
+</header>
+
+<body>
+	<div class="alert alert-warning" align="center" id="alert-box" style="visibility: hidden;">
+		Successfully Registered
+	</div>
+	<div class="login-form">
+		<form action="/signin" method="get" name="form1" id="form1">
+			<h2 class="text-center" id="sign">Sign In</h2>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input type="text" class="form-control" placeholder="Email" required="required" id="LogInName"
+						name="email" onfocus="this.placeholder='';" onblur="this.placeholder='Email';">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					<input type="password" class="form-control" placeholder="Password" required="required"
+						id="LogInEmail" name="password" onfocus="this.placeholder='';"
+						onblur="this.placeholder='Password';">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="dropdown">
+					<button class="btn btn-info btn-block dropdown-toggle" type="button" id="dropdownMenuButton"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Select User Type
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<label class="dropdown-item" style="padding-left: 10px;"><input type="radio" id="type"
+								name="type" value="S">Student</label>
+						<br>
+						<label class="dropdown-item" style="padding-left: 10px;"><input type="radio" id="type"
+								name="type" value="H">Worker</label>
+						<br>
+						<label class="dropdown-item" style="padding-left: 10px;"><input type="radio" id="type"
+								name="type" value="A">Admin</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary btn-block" style="border-radius: 6px;" value="Log In">
+			</div>
+		</form>
+		<form action="/signup" method="post" name="form2" id="form2" style="display:none">
+			<h2 class="text-center" id="sign">Sign Up</h2>
+			<div class="form-group">
+				<div class="dropdown">
+					<button class="btn btn-secondary btn-block btn-danger dropdown-toggle" type="button"
+						id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Gender
+					</button>
+					<div class="dropdown-menu" id="drpdwn" aria-labelledby="dropdownMenuButton">
+						<label class="dropdown-item" style="padding-left: 10px;"><input type="radio" id="gender"
+								name="gender" value="M">Male</label>
+						<br>
+						<label class="dropdown-item" style="padding-left: 10px;"><input type="radio" id="gender"
+								name="gender" value="F">Female</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">Full Name</span>
+					<input type="text" class="form-control" placeholder="Full Name" required="required" id="Name"
+						name="name" onfocus="this.placeholder='';" onblur="this.placeholder='Full Name';">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">Roll No..</span>
+					<input type="text" class="form-control" placeholder="Rollno" required="required" id="rollno"
+						name="rollno" onfocus="this.placeholder='';" onblur="this.placeholder='Rollno';">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">Room No.</span>
+					<input type="text" class="form-control" placeholder="Room Number" required="required" id="roomno"
+						name="roomno" onfocus="this.placeholder='';" onblur="this.placeholder='Room No';">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">Phone No.</i></span>
+					<input type="text" class="form-control" placeholder="Phone Number" required="required" id="phone"
+						name="phoneno" onfocus="(this.type='number');this.placeholder='';"
+						onfocusout="(this.type='text')" onblur="this.placeholder='Phone no.';">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">E-mail</span>
+					<input type="text" class="form-control" placeholder="Email" required="required" id="Email"
+						name="email" onfocus="this.placeholder='';" onblur="this.placeholder='Email';">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon">Password</span>
+					<input type="password" class="form-control" placeholder="Password" required="required" id="Password"
+						name="password" onfocus="this.placeholder='';" onblur="this.placeholder='Password';">
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary btn-block" value="Sign Up">
+		</form>
+	</div>
+	<p class="text-center ">Don't have an account?! <button class="btn btn-danger" id="toggleSign"><span
+				id="buttonText">Sign Up</span></button></p>
+	</div>
+</body>
+
+<footer>
+		<div style="position: absolute;left: 10px;bottom:10px;text-align: start;">
+				<h6><span class="glyphicon glyphicon-envelope">&nbsp;</span><code style="color: black;">suhailvampire@live.com</code></h6>
+				<h6><span class="glyphicon glyphicon-phone">&nbsp;</span><code style="color: black;">9074897700</code></h6>
+				<h6><span class="glyphicon glyphicon-user">&nbsp;</span><code style="color: black;">Zuhail Ahammed Khan</code></h6>
+			</div>
+</footer>
+
+</html>
+
+<!--Script-->
+
+<script src="js/indexjs.js"></script>

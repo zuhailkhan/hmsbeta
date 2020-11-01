@@ -1,0 +1,10 @@
+.fontAudiowide{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.fontSourceSansPro{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:grey;
+}
+a[name='dashBoardButtons']:hover{
+    background-color: red;
+}
