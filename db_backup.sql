@@ -40,7 +40,7 @@ CREATE TABLE `admin_info` (
 
 LOCK TABLES `admin_info` WRITE;
 /*!40000 ALTER TABLE `admin_info` DISABLE KEYS */;
-INSERT INTO `admin_info` VALUES (1,'service@iiitb.org','thanksiiitb','Admin','9998889990');
+INSERT INTO `admin_info` VALUES (1, 'admin@hmsbeta.com', 'hmsbeta_123', 'Admin', '9998889990');
 /*!40000 ALTER TABLE `admin_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -149,7 +149,9 @@ CREATE TABLE `handyman_info` (
 
 LOCK TABLES `handyman_info` WRITE;
 /*!40000 ALTER TABLE `handyman_info` DISABLE KEYS */;
-INSERT INTO `handyman_info` VALUES (1,'handyman@iiitb.org','thanks123','John Doe','+918882229991','Carpenter',0,0,0,0,0,0),(2,'Bmahesh@iiitb.org','thanks123','Mahesh Bhupati','918889991112','Electrician',0,0,0,0,0,0),(3,'hkiran@iiitb.org','thanks123','Kiran Rao','917282991112','Electrician',0,0,0,0,0,0);
+INSERT INTO `handyman_info` VALUES (1, 'carpenter1@hmsbeta.com', 'carp123', 'Carpenter Joe', '+918882229991', 'Carpenter', 0, 0, 0, 0, 0, 0),
+(2, 'electrician1@hmsbeta.com', 'elec1123', 'Electrician Musk', '918889991112', 'Electrician', 0, 0, 0, 0, 0, 0),
+(3, 'electrician2@hmsbeta.com', 'elec2123', 'Electrician Bezos', '917282991112', 'Electrician', 0, 0, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `handyman_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -207,7 +209,8 @@ CREATE TABLE `student_info` (
 
 LOCK TABLES `student_info` WRITE;
 /*!40000 ALTER TABLE `student_info` DISABLE KEYS */;
-INSERT INTO `student_info` VALUES (1,'anubhav.gupta@iiitb.org','thanks123','MT2016018','8305771509',315,'M','Anubhav Gupta'),(3,'arpit.waghmare@iiitb.org','thanks123','MT2016024','9066218124',318,'M','Arpit Waghmare');
+INSERT INTO `student_info` VALUES (1, 'zuhailkhan@hmsbeta.com', 'thanks123', 'MT2016018', '8305771509', 315, 'M', 'Zuhail Khan'),
+(3, 'someoneelse@hmseta.com', 'thanks123', 'MT2016024', '9066218124', 318, 'M', 'Some one Else');
 /*!40000 ALTER TABLE `student_info` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
